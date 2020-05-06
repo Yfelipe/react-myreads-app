@@ -29,6 +29,10 @@ body, .app {
   flex: 1;
 }
 
+.list-books {
+  background-color: whitesmoke;
+}
+
 .bookshelf {
   padding: 0 10px 20px;
 }
@@ -134,7 +138,7 @@ button:active {
 }
 
 .books-grid li {
-  padding: 10px 15px;
+  padding: 10px 25px;
   text-align: left;
 }
 
@@ -195,4 +199,28 @@ button:active {
   padding: 20px 10px 0;
   text-align: center;
   font-size: 0.8em;
+}
+.loader-div {
+  margin: auto;
+  width: 0;
+  height: 50%;
+  padding-top: 50%;
+  text-align: center;
+}
+
+.book-cover {
+  box-shadow: 10px 10px 5px grey;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #60ac5d;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
